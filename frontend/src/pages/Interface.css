@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interface {
+    width: 500px;
+    min-height: 100vh;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    /* padding-bottom: 10px; */
+}
+.header {
+    position: fixed;
+    left: calc(50% - 250px);
+    top: 1;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    border: 1px dashed;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background-color: #fff;
+}
+.header h2, .sectionheader h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.headerbtn {
+    /* position: fixed;
+    top: 41px;
+    left: calc(50% - 250px); */
+    width: 500px;
+    display: flex;
+    column-gap: 5px;
+}
+.headerbtn button {
+    width: 50%;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.mainsection {
+    padding-top: 50px;
+}
+
+.sectionheader {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: 1px dashed;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionbody {
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 5px;
+   border-bottom: 1px dashed;
+}
+
+.sectionbodyleft {
+    width: 50%;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    align-items: center;
+    border-right: 1px dashed;
+}
+.rightbordernone {
+    width: 50%;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    align-items: center;
+    border-right: none;
+}
+.sectionbodyleft input, .sectionbodyright input {
+    width: 100%;
+    padding: 5px 12px;
+    outline: none;
+}
+.sectionbodyleft button, .sectionbodyright button {
+    width: 100%;
+    padding: 5px 12px;
+    cursor: pointer;
+    
+}
+.sectionbodyright {
+    width: 50%;
+    padding: 2px 5px;
+}
+.sectionbodyright ul, .sectionbodysingle ul {
+    list-style: none;
+}
+.sectionbodyright ul li, .sectionbodysingle ul li{
+    display: flex;
+    column-gap: 10px;
+    padding: 3px;
+}
+.sectionbodysingle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.sectionbodysingle span {
+    font-weight: 800;
+}
+
+.connectcontainer {
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connectedStatus {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.connectedStatus button {
+    padding: 8px 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,3 @@
+Total Supply = 1000000
+
+contract address = 0xba5819d121adcf258ee8e77fabe2c0327c5b96cf
