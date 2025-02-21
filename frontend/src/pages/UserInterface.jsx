@@ -5,7 +5,7 @@ import { ethers } from 'ethers';
 import contractABI from '../functionality/ABI.json';
 
 function UserInterface({address, signer}) {
-    const contractAdress = "0xba5819d121adcf258ee8e77fabe2c0327c5b96cf";
+    const contractAdress = import.meta.env.VITE_CONTRACT_ADDRESS;
     const [contract, setContract] = useState(null);
     const [balance, setBalance] = useState(0);
     const [stakeAmount, setStakeAmount] = useState();

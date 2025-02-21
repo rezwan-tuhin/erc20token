@@ -11,7 +11,7 @@ function App() {
   const [isOwner, setOwner] = useState(false);
 
   useEffect(() => {
-    if(address === "0x92c339e9108c0144ab6b584f46082c1847ed6cdd") {
+    if(address === import.meta.env.VITE_OWNER_ADDRESS) {
       setOwner(true);
     }
   }, [address]);    
